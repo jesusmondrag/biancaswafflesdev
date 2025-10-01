@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F7C5D9">
+    <link rel="apple-touch-icon" href="/images/logo-192.png">
+    <title>Bianca's Waffle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              'brand-pink': '#F7C5D9',
+              'brand-fuchsia': '#DD1D68',
+              'brand-green': '#25D366',
+            },
+            keyframes: {
+              pop: {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.15)' },
+              },
+              spin: {
+                'to': { transform: 'rotate(360deg)' },
+              }
+            },
+            animation: {
+              pop: 'pop 0.3s ease-out',
+              spin: 'spin 1s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .initial-loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        inset: 0;
+        background-color: #F7C5D9;
+        z-index: 100;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .initial-loader.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .spinner {
+        width: 56px;
+        height: 56px;
+        border: 7px solid white;
+        border-top-color: #DD1D68;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DwiFxtqQ.js"></script>
+</head>
+  <body>
+    <div id="root">
+      <div id="initial-loader" class="initial-loader">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </body>
+</html>
