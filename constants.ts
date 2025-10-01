@@ -1,0 +1,92 @@
+
+import { WaffleBase, Ingredient, AppSettings, AboutUsContent, FAQItem, ExtraProduct, PaymentMethod } from './components/types';
+
+export const DEFAULT_WAFFLE_BASES: WaffleBase[] = [
+  { id: 1, name: 'Classic', price: 5.00, imageUrl: '/images/base (1).png' },
+  { id: 2, name: 'Chocolate', price: 6.00, imageUrl: '/images/base (2).png' },
+  { id: 3, name: 'Red Velvet', price: 6.50, imageUrl: '/images/base (3).png' },
+];
+
+export const DEFAULT_INGREDIENTS: Ingredient[] = [
+  { id: 1, name: 'Fresa', price: 1.50, imageUrl: '/images/fresa.png' },
+  { id: 2, name: 'Oreo', price: 1.00, imageUrl: '/images/oreo.png' },
+  { id: 3, name: 'Brownie', price: 2.00, imageUrl: '/images/brownie.png' },
+  { id: 4, name: 'Banana', price: 1.00, imageUrl: '/images/banana.png' },
+  { id: 8, name: 'Arándanos', price: 1.50, imageUrl: '/images/arandanos.png' },
+  { id: 7, name: 'Helado', price: 2.50, imageUrl: '/images/helado.png' },
+];
+
+export const DEFAULT_TOPPINGS: Ingredient[] = [
+  { id: 5, name: 'Nutella', price: 1.75, imageUrl: '/images/nutella.png' },
+  { id: 6, name: 'Chispas', price: 0.75, imageUrl: '/images/chispas.png' },
+  { id: 9, name: 'Sirope de Fresa', price: 1.25, imageUrl: '/images/sirope-fresa.png' },
+  { id: 10, name: 'Leche Condensada', price: 1.25, imageUrl: '/images/leche-condensada.png' },
+  { id: 11, name: 'Sirope de Chocolate', price: 1.00, imageUrl: '/images/sirope-chocolate.png' },
+];
+
+export const DEFAULT_EXTRA_PRODUCTS: ExtraProduct[] = [
+  { id: 1, name: 'Coca-Cola', price: 2.00, imageUrl: '/images/coke.png', description: 'Lata de 355ml' },
+  { id: 2, name: 'Agua Mineral', price: 1.50, imageUrl: '/images/water.png', description: 'Botella de 500ml' },
+  { id: 3, name: 'Jugo de Naranja', price: 2.50, imageUrl: '/images/juice.png', description: 'Vaso de 12oz' },
+];
+
+export const DEFAULT_PAYMENT_METHODS: PaymentMethod[] = [
+  { id: 1, key: 'pagoMovil', name: 'Pago Móvil', imageUrl: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%233B82F6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>' },
+  { id: 2, key: 'binance', name: 'Binance', imageUrl: '/images/binance-logo.png' },
+  { id: 3, key: 'zinli', name: 'Zinli', imageUrl: '/images/zinli-logo.png' },
+];
+
+export const DEFAULT_ABOUT_US_CONTENT: AboutUsContent = {
+  title: 'El Corazón Detrás del Waffle',
+  subtitle: 'Donde cada waffle cuenta una historia de sabor, familia y pasión.',
+  quote: '"Para mí, un waffle es más que un postre. Es un abrazo cálido, una celebración, un momento de pura felicidad."',
+  founder: 'Bianca, Fundadora',
+  paragraph1: "Bianca's Waffle nació del sueño de nuestra fundadora, Bianca, una apasionada de la repostería que desde niña experimentaba en la cocina de su abuela. Entre sacos de harina y el aroma a vainilla, aprendió que los mejores ingredientes son el amor y la paciiencia. Para ella, un waffle no es solo una masa cocida, es un lienzo en blanco para la creatividad, una excusa para compartir y un vehículo para la felicidad.",
+  paragraph2: "Después de años perfeccionando su receta secreta para la masa —esponjosa y ligera por dentro, dorada y crujiente por fuera—, decidió que era un sabor demasiado bueno para no compartirlo. Así, con un food truck pintado de rosa brillante y el aroma inconfundible de waffles recién hechos, comenzó su misión: endulzar las calles y los corazones de la ciudad.",
+  pillarsTitle: 'Nuestros Pilares',
+  pillars: [
+    {
+      emoji: '🍓',
+      title: 'Calidad Suprema',
+      description: 'Utilizamos solo los ingredientes más frescos y de la más alta calidad. Desde frutas de temporada compradas en mercados locales hasta el chocolate más puro, cada bocado es una garantía de sabor y frescura.'
+    },
+    {
+      emoji: '🎨',
+      title: 'Creatividad sin Límites',
+      description: '¡Tú eres el chef! Te damos las herramientas para que diseñes el waffle de tus sueños. Creemos en la autoexpresión a través del sabor. ¡Combina, experimenta y crea tu obra maestra!'
+    },
+    {
+      emoji: '😊',
+      title: 'Comunidad y Sonrisas',
+      description: 'Más que clientes, somos una familia. Nuestro food truck es un punto de encuentro para amigos y familias, un lugar para crear momentos dulces, memorables y llenos de sonrisas.'
+    }
+  ]
+};
+
+export const DEFAULT_FAQ: FAQItem[] = [
+    {
+        id: 1,
+        question: '¿Ofrecen opciones sin gluten o veganas?',
+        answer: '¡Estamos trabajando en ello! Actualmente estamos perfeccionando nuestras recetas para poder ofrecer deliciosas opciones sin gluten y veganas muy pronto. ¡Sigue nuestras redes sociales para no perderte el anuncio!'
+    },
+    {
+        id: 2,
+        question: '¿Hacen catering para eventos?',
+        answer: '¡Absolutamente! Nos encantaría llevar la alegría de nuestros waffles a tu fiesta, reunión o evento corporativo. Escríbenos a [EMAIL] con los detalles y te enviaremos una cotización.'
+    },
+    {
+        id: 3,
+        question: '¿Dónde está ubicado el food truck exactamente?',
+        answer: 'Nuestra ubicación puede variar en ocasiones especiales, pero generalmente nos encontrarás en el punto indicado en el mapa. Para ver el mapa, ve a la sección "Menú", completa los primeros pasos de tu pedido y selecciona la opción "Pickup". ¡La mejor forma de estar siempre al día es seguirnos en Instagram!'
+    }
+];
+
+export const DEFAULT_SETTINGS: AppSettings = {
+  whatsappNumber: '584129876543',
+  contactPhone: '+58 412-9876543',
+  contactEmail: 'hola@biancaswaffle.com',
+  instagramHandle: '@BiancasWaffle',
+  mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.011985338165!2d-69.3510200852015!3d10.070020992518175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8761b033878b7b%3A0x2648f57985443e01!2sParque%20Zool%C3%B3gico%20y%20Bot%C3%A1nico%20Bararida!5e0!3m2!1sen!2sve!4v1684351312345',
+  aboutUsContent: DEFAULT_ABOUT_US_CONTENT,
+  faq: DEFAULT_FAQ,
+};
